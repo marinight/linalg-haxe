@@ -1,4 +1,4 @@
-package hxlinalg;
+package linalg;
 
 import haxe.ds.Vector;
 

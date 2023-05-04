@@ -3,7 +3,7 @@
     "license": "MIT",
     "tags": ["math", "linear-algebra", "matrix", "vector"],
     "classPath": "src",
-    "description": "A small linear algebra library for Haxe.",
+    "description": "A cozy linear algebra library for Haxe.",
     "contributors": ["marinight"],
     "releasenote": "Initial release",
     "version": "1.0.0",
