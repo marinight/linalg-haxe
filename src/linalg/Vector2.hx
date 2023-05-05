@@ -2,9 +2,11 @@ package linalg;
 
 import haxe.ds.Vector;
 
+typedef Vec2 = Vector2;
+
 abstract Vector2(Vector<Float>) from Vector<Float> to Vector<Float> {
-    public function new(x:Float, y:Float) {
-        this = new Vector<Float>(2);
+    public function new(?x:Float, ?y:Float) {
+        this = new Vector<Float>(2, 0);
         this[0] = x;
         this[1] = y;
         // this.set()
@@ -68,9 +70,5 @@ abstract Vector2(Vector<Float>) from Vector<Float> to Vector<Float> {
     @:commutative
     @:op(A /= B) inline function divscaleEq(r:Float) {
         return this = divscale(this, r);
-    }
-
-    function toString() {
-        return '[${this[0]}]\n[${this[1]}]';
     }
 }
