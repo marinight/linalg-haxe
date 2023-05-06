@@ -78,11 +78,29 @@ abstract Vector2(Vector<Float>) from Vector<Float> to Vector<Float> {
         return this = divscale(this, r);
     }
 
+    @:op(A * B) static inline function mulVec2(l:Vector2, r:Vector2) {
+        return new Vector2(l.x*r.x, l.y*r.y);
+    }
+
+    @:op(A *= B) inline function mulEqVec2(r:Vector2) {
+        return this = mulVec2(this, r);
+    }
+
     public static inline function dot(v1:Vector2, v2:Vector2) {
         return v1.x*v2.x + v1.y * v2.y;
     }
 
     public static inline function cross(v1:Vector2, v2:Vector2) {
         return v1.x*v2.y - v1.y*v2.x;
+    }
+
+    public static inline function normalize(v:Vector2)
+        return v / v.length();
+
+    public inline function length()
+        return Math.sqrt(lengthSquared());
+
+    public inline function lengthSquared() {
+        return getVal("x")*getVal("x") + getVal("y")*getVal("y");
     }
 }
