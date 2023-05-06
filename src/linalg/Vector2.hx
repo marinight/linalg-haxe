@@ -101,6 +101,10 @@ abstract Vector2(Vector<Float>) from Vector<Float> to Vector<Float> {
         return Math.sqrt(lengthSquared());
 
     public inline function lengthSquared() {
-        return getVal("x")*getVal("x") + getVal("y")*getVal("y");
+        return this[0]*this[0] + this[1]*this[1];
+    }
+
+    public function clone() {
+        return new Vector2(this[0], this[1]);
     }
 }

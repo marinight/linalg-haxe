@@ -109,4 +109,8 @@ abstract Matrix2x2(Vector<Float>) from Vector<Float> to Vector<Float> {
     @:op(A /= B) inline function divEq(r:Float) {
         return this = div(this, r);
     }
+
+    public function clone() {
+        return new Matrix2x2(this[0], this[1], this[2], this[3]);
+    }
 }
