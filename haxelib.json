@@ -5,7 +5,7 @@
     "classPath": "src",
     "description": "A cozy linear algebra library for Haxe.",
     "contributors": ["marinight"],
-    "releasenote": "Initial release",
-    "version": "1.0.0",
-    "url": "https://github.com/marinight/hxlinalg"
+    "releasenote": "Fixing README issues",
+    "version": "0.0.2",
+    "url": "https://github.com/marinight/linalg-haxe"
 }
