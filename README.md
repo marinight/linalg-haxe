@@ -1,3 +1,4 @@
+# **DISCONTINUED** - Do not use linalg!
 # linalg
 
 A cozy linear algebra library for Haxe.
